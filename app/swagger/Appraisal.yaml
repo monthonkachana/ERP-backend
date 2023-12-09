@@ -1,0 +1,70 @@
+paths:
+  /api/auth/addAppraisal:
+    post:
+      summary: "Add Appraisal"
+      tags:
+        - "Appraisal"
+      description: "Endpoint to add an appraisal"
+      responses:
+        200:
+          description: "Appraisal added successfully"
+
+tags:
+  - name: "Appraisal"
+    description: "Endpoints related to appraisal management"
+
+
+
+# // // Employee
+# // app.post("/api/auth/addEmp", controller.addemp);
+# // app.get('/show/totalempdetails', empctr.totalEmpdetails);
+# // app.get('/show/totalempCount', empctr.countEmp);
+
+# // // Department
+# // app.post("/api/auth/addDepart", controller.adddepart);
+# // app.get('/show/totalDpdetail', depart.totalDeparts);
+# // app.get('/show/totalDpCount', depart.countDepart);
+
+# // // Salary
+# // app.post("/api/auth/addSalary", controller.addSalary);
+# // app.get("/api/ShowSalary/:id", controller.ShowSalaryofEmployee);
+# // app.get("/api/ShowAllSalary", controller.ShowAllSalaries);
+
+# // // Expenses
+# // app.post("/api/auth/addExpense", controller.addExpenses);
+# // app.get("/api/auth/showExpenseById/:id", controller.showExpenceById);
+# // app.get('/show/alldetailExpenses', expenses.totalexpensesdetails);
+# // app.get('/show/countexpense', expenses.countExpenses);
+
+# // // Notice
+# // app.post("/api/auth/addNotice", controller.addNotice);
+# // app.get("/api/show/allNotices", controller.showNotices);
+
+# // // Appraisal
+# // app.post("/api/auth/addAppraisal", controller.addAppraisal);
+
+# // // Projects
+# // app.post("/api/auth/addProjects", controller.addProjects);
+# // app.get("/api/show/showprojects/:id", controller.showProjects);
+# // app.get("/api/show/showAllProjects", controller.showAllProjects);
+# // app.post("/api/auth/addProjectsDetails", controller.addProjectsDetails);
+
+# // // Attendance
+# // app.post("/api/auth/addAttendence", controller.addAttendence);
+# // app.get("/api/show/attendencebyid/:id", controller.showAttendencebyid);
+# // app.get("/api/show/attendencebyname/:name", controller.showAttendencebyName);
+# // app.get("/api/show/allattendence", controller.showAllAttendence);
+
+# // // Leave
+# // app.post("/api/auth/addLeave", controller.addLeave);
+
+# // // Task
+# // app.post("/api/auth/addTask", controller.addTask);
+# // app.get("/api/show/showTasks/:id", controller.showTasksByid);
+# // app.get('/show/allTasksDetail', tasks.totaltaskdetails);
+# // app.get('/show/counttasks', tasks.counttask);
+
+# // // Loan and Advance
+# // app.post("/api/auth/loanAndAdvance", controller.LoanAndAdvance);
+# // app.get("/api/show/showloanAndAdvance/:id", controller.showloanAndAdvance);
+
