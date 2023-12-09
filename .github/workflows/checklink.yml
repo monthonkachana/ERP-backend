@@ -37,7 +37,7 @@ jobs:
 
       - name: Link check (warnings, changed files)
         run: |
-          ./path/to/rendered-content-link-checker.mjs \
+          ./index.js \
             --language en \
             --max 100 \
             --check-anchors \
