@@ -79,28 +79,28 @@ const spec = swaggerJsdoc(options);
 //view api-doc http://localhost:8080/api-docs
 app.use('/api-docs', swaggerUi.serveFiles(spec), swaggerUi.setup(spec));
 
+// //for testing
+// app.get('/add/emp',empctr.addemp)
+// app.get('/add/bulkemp',empctr.addBulkemp)
+// app.get('/add/sal',salctrl.addsalary)
+// // app.get('/add/netsal',salctrl.gettotalsalary),
+// app.get('/add/eidsal',salctrl.getsalarybyeid)
+// app.get('/add/leave',leav.addleaves)
+// app.get('/add/dp',depart.adddpt)
+// app.get('/add/bulkdp',depart.addBulkdp)
 
-app.get('/add/emp',empctr.addemp)
-app.get('/add/bulkemp',empctr.addBulkemp)
-app.get('/add/sal',salctrl.addsalary)
-// app.get('/add/netsal',salctrl.gettotalsalary),
-app.get('/add/eidsal',salctrl.getsalarybyeid)
-app.get('/add/leave',leav.addleaves)
-app.get('/add/dp',depart.adddpt)
-app.get('/add/bulkdp',depart.addBulkdp)
+// app.get('/add/payrol',payrol.addpay)
+// app.get('/add/projects',pro.addpro)
+// app.get('/add/pd',pd.addpd)
+// app.get('/add/appraisal',appraisal.addapr)
+// app.get('/add/appraisal',appraisal.addapr)
+// app.get('/add/attendence',attendence.addattendence)
+// app.get('/add/checkattendence',attendence.checkattendence)
+// app.get('/add/addtasks',tasks.addtask)
+// app.get('/add/addbulktasks',tasks.addBulktask)
 
-app.get('/add/payrol',payrol.addpay)
-app.get('/add/projects',pro.addpro)
-app.get('/add/pd',pd.addpd)
-app.get('/add/appraisal',appraisal.addapr)
-app.get('/add/appraisal',appraisal.addapr)
-app.get('/add/attendence',attendence.addattendence)
-app.get('/add/checkattendence',attendence.checkattendence)
-app.get('/add/addtasks',tasks.addtask)
-app.get('/add/addbulktasks',tasks.addBulktask)
-
-app.get('/add/addexpenses',expenses.addexpenses)
-app.get('/add/addbulkExpenses',expenses.addBulkexpenses)
+// app.get('/add/addexpenses',expenses.addexpenses)
+// app.get('/add/addbulkExpenses',expenses.addBulkexpenses)
 
 
 //1.Add department
