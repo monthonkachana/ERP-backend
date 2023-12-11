@@ -1,12 +1,30 @@
-const assert = require('assert');
-const { yourFunctionToTest } = require('../path-to-your-code'); 
+const assert = require("assert");
+const { Sequelize, DataTypes } = require("sequelize");
+const UserModel = require("../app/models/user.model");
+const sequelize = new Sequelize("sqlite::memory:");
 
-describe('Your Test Suite', function () {
-  it('should do something', function () {
+const User = UserModel(sequelize, Sequelize, DataTypes);
+const sampleUserData = {
+  firstname: "John",
+  lastname: "Doe",
+  email: "john.doe@example.com",
+  password: "securepassword",
+  retypepassword: "securepassword",
+};
 
-    const result = yourFunctionToTest(/* parameters */);
-    assert.strictEqual(result, expectedValue);
+describe("User Model Tests", function () {
+  beforeEach(async function () {
+    await sequelize.sync({ force: true });
   });
 
+  it("should create a user", async function () {
+    const createdUser = await User.create(sampleUserData);
 
+    const retrievedUser = await User.findOne({
+      where: { email: sampleUserData.email },
+    });
+
+    assert.strictEqual(createdUser.email, sampleUserData.email);
+    assert.strictEqual(retrievedUser.email, sampleUserData.email);
+  });
 });
