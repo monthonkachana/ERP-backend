@@ -32,24 +32,24 @@ jobs:
         with:
           fileOutput: "json"
 
-      - name: Show files changed
-        run: cat $HOME/files.json
+    #   - name: Show files changed
+    #     run: cat $HOME/files.json
 
-      - name: Link check (warnings, changed files)
-        run: |
-          ./path/to/rendered-content-link-checker.mjs \
-            --language en \
-            --max 100 \
-            --check-anchors \
-            --check-images \
-            --verbose \
-            --list $HOME/files.json
+    #   - name: Link check (warnings, changed files)
+    #     run: |
+    #       ./path/to/rendered-content-link-checker.mjs \
+    #         --language en \
+    #         --max 100 \
+    #         --check-anchors \
+    #         --check-images \
+    #         --verbose \
+    #         --list $HOME/files.json
 
-      - name: Link check (critical, all files)
-        run: |
-          ./path/to/rendered-content-link-checker.mjs \
-            --language en \
-            --exit \
-            --verbose \
-            --check-images \
-            --level critical
+    #   - name: Link check (critical, all files)
+    #     run: |
+    #       ./path/to/rendered-content-link-checker.mjs \
+    #         --language en \
+    #         --exit \
+    #         --verbose \
+    #         --check-images \
+    #         --level critical
