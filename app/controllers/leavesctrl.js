@@ -4,7 +4,7 @@ const leaves = db.leaves;
 var addleaves = async (req,res)=>{
 
     let data = await leaves.create({
-        'id':'1',
+        'id':'2',
         'date':'1/2/2022',
         'desc':'leave because of the illness',
        

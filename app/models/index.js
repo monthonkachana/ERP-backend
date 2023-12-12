@@ -41,7 +41,7 @@ db.tasks =require("../models/task.js")(sequelize, Sequelize,DataTypes);
 db.expenses =require("../models/expenses.js")(sequelize, Sequelize,DataTypes); 
 db.loanAndAdvance =require("../models/loanAndAdvance.js")(sequelize, Sequelize,DataTypes); 
 // db.Reports.hasOne(db.Notice,{
-  
+
 // })
 db.role.belongsToMany(db.User, {
   through: "user_roles",
@@ -139,12 +139,12 @@ db.departments.hasMany(db.Notice,{
 db.projects.hasMany(db.ProjectsDetail,{
 foreignKey:"p_id"
 });
-// db.salary.hasMany(db.payrol,{
-//   foreignKey:"s_id"
-// })
-// db.salary.hasOne(db.employee,{
-//   foreignKey:"e_id"
-// })
+db.salary.hasMany(db.payrol,{
+  foreignKey:"s_id"
+})
+db.salary.hasOne(db.employee,{
+  foreignKey:"e_id"
+})
 db.ROLES = ["user", "admin", "hr"];
 
 module.exports = db;

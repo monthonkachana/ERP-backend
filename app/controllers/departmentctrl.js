@@ -5,7 +5,7 @@ const dpt = db.departments;
 var adddpt = async (req,res)=>{
 
     let data = await dpt.create({
-        'd_id':'1',
+        'd_id':'2',
         'name':'software depart',
         'desc':'software depart have the team of the development including web, app, software',
        
@@ -19,12 +19,12 @@ var adddpt = async (req,res)=>{
 var addBulkdp = async (req,res)=>{
 
     let data = await dpt.bulkCreate([{
-        'd_id':'2',
+        'd_id':'3',
         'name':'hr depart',
         'desc':'hr depart have the team of the hr management',
     },
     {
-        'd_id':'3',
+        'd_id':'4',
         'name':'admin depart',
         'desc':'admin depart have the admin and ceo and cto who can view everything',
     }]);

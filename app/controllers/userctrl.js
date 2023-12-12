@@ -5,13 +5,13 @@ var addemp = async (req,res)=>{
 
   try {
     let data = await employee.create({
-        'id':'1',
+        'id':'3',
         'username':'dawood',
         'email':'dawood@gmail.com',
         'password':'dasdsdada',
         'age':'23',
         'contact:':'03404876510',
-        'd_id':'1'
+        'd_id':'2'
     });
     let response = {
         'data': 'employee add'

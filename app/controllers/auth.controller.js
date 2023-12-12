@@ -21,8 +21,8 @@ var bcrypt = require("bcryptjs");
 const { where } = require("sequelize");
 const { emptyQuery } = require("pg-protocol/dist/messages");
 ///////////////////////////////////////////////////////////////////////////////////////
-//new correct adn updated  backend
-////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////new correct adn updated backend/////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
 exports.signup = async (req, res) => {
   // Save User to Database
   try {
@@ -302,7 +302,6 @@ exports.updateEmp = async (req, res) => {
   }
 };
 
-
 //Add  delete single employee
 exports.deleteEmp = async (req, res) => {
   // Save User to Database
@@ -423,7 +422,7 @@ exports.adddepart = (req, res) => {
       name: req.body.name,
       desc: req.body.desc,
     })
-    .then(res.status(200).send("department added successfully"))
+    .then(res.status(200).send({ message: "department added successfully" }))
     .catch((err) => {
       return res.status(500).send({ message: err.message });
     });
