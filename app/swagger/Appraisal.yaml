@@ -12,6 +12,9 @@ paths:
 tags:
   - name: "Appraisal"
     description: "Endpoints related to appraisal management"
+# tags:
+#   - name: "Appraisal"
+#     description: "Endpoints related to appraisal management"
 
 
 

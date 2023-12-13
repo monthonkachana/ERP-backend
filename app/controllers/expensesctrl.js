@@ -50,10 +50,10 @@ var totalexpensesdetails = async( req,res) => {
 }
 var countExpenses = async (req,res) => {
     const { count, rows }  = await expenses.findAndCountAll({});
-//    let response = {
-//        'Total Expenses':  count 
-//    }
-   res.json(count);
+   let response = {
+       'Total Expenses':  count 
+   }
+   res.json(response);
    res.end();
 }
 module.exports = {

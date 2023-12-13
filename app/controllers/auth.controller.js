@@ -885,10 +885,10 @@ exports.showloanAndAdvance = async (req, res) => {
           type: QueryTypes.SELECT,
         }
       );
-      // let response = {
-      //     'data': data
-      // }
-      return res.status(200).json(data);
+      let response = {
+        data: data,
+      };
+      return res.status(200).json(response);
     } else {
       return res
         .status(200)

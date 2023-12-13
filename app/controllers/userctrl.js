@@ -67,10 +67,10 @@ try {
 var countEmp = async (req,res) => {
     try {
         const { count, rows }  = await employee.findAndCountAll({});
-//    let response = {
-//        'Total Employees':  count 
-//    }
-   res.json(count);
+   let response = {
+       'Total Employees':  count 
+   }
+   res.json(response);
    res.end();
     } catch (error) {
         res.status(500).send('internal server error')
